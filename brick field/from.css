@@ -1,0 +1,20 @@
+.main_div {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+body {
+    padding: 100px !important;
+    background-image: url('/static/brick.jpg');
+}
+.from_div{
+    background-color: #293436;
+    border-radius: 20px;
+    color: aliceblue;
+}
+.button{
+    background-color: rgb(115, 234, 102);
+}

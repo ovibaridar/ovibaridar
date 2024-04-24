@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers </title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Main Navigation -->
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="position-sticky d1 col-auto col-md-3 col-xl-2 px-sm-2 me-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="#" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li>
+                            <a href="/Dashboard.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span></a> </a>
+                        </li>
+                        <li>
+                            <a href="/Orders.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-ui-checks-grid"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
+                        </li>
+
+                        <li>
+                            <a href="/Order Details.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-card-checklist"></i> <span class="ms-1 d-none d-sm-inline">Delivery</span></a>
+                        </li>
+
+
+                        <li>
+                            <a href="/Customers.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/Bricks.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-bricks"></i> <span class="ms-1 d-none d-sm-inline">Bricks</span></a>
+                        </li>
+
+                        <li>
+                            <a href="/Drivers.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-person-standing"></i> <span class="ms-1 d-none d-sm-inline">Drivers</span></a>
+                        </li>
+
+                        <li>
+                            <a href="/Trucks.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-truck"></i> <span class="ms-1 d-none d-sm-inline">Trucks</span></a>
+                        </li>
+
+
+                        <li>
+                            <a href="/Transaction History.html" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-clock-history"></i> <span class="ms-1 d-none d-sm-inline">Transaction History</span></a>
+                        </li>
+
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                            id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                                class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">loser</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="/setting.html">Settings</a></li>
+                            <li><a class="dropdown-item" href="/profile.html">Profile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/login.html">Sign out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=" d2  ms-5 col container_scroll  py-3">
+
+                <div class="container ">
+                    <h1 class="mt-5 d-flex justify-content-center py-2">Add Drivers</h1>
+                    <form class="" id="customerForm">
+                        <!-- Customer Information -->
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label for="customerName" class="form-label">Drivers Name <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="customerName" required>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="customerEmail" class="form-label">Driving License Number</label>
+                                <input type="number" class="form-control" id="customerEmail" required>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="customerNID" class="form-label">NID Number</label>
+                                <input type="number" class="form-control" id="customerNID" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="deliveryAddress" class="form-label">Address<span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="deliveryAddress" required>
+                            </div>
+
+                            <div class="col-md-6  mb-3">
+                                <label for="phoneNumbers" class="form-label">Phone Numbers <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="phoneNumbers" required>
+                            </div>
+                        </div>
+                        <!-- Order Details -->
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="gender" class="form-label">Gender <span class="text-danger">*</span></label>
+                                <select class="form-select" id="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="quantity" class="form-label">Age range</label>
+                                <input type="number" class="form-control" id="quantity" required>
+                            </div>
+                        </div>
+
+                        <!-- Additional Notes/Instructions -->
+                        <!-- Submit Button -->
+                        <div class="row">
+                            <div class="d-flex justify-content-center col-md-12 mb-3">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="container">
+                    <h2 class="my-4 d-flex justify-content-center">Drivers Details</h2>
+                    <!-- Search Input -->
+                    <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search...">
+                    <!-- Order Table -->
+                    <table class=" " id="myTable">
+                        <thead>
+                            <tr>
+                                <th>Truck ID</th>
+                                <th>Truck Name</th>
+                                <th>License plate Number</th>
+                                <th>Engine type</th>
+                                <th>Fuel type </th>
+                                <th>Transmission type </th>
+                                <th>Total Bircks Capability</th>
+                                <th>Transmit Cost</th>
+                                <th>ACtion</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>jhone@gmail.com</td>
+                                <td>123 Main St, City</td>
+                                <td>+8801700000000</td>
+                                <td>Male</td>
+                                <td>42</td>
+                               <td class="d-flex">
+                                     <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal"
+                                        data-bs-target="#editModal">
+                                        Edit
+                                    </button>
+                                    <button type="button" class="btn btn-danger">
+                                        Delete
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <!-- Other table rows -->
+                        </tbody>
+                    </table>
+                    <!-- Pagination Buttons -->
+                    <div class="text-center mt-3">
+                        <button id="prevBtn" class="btn btn-primary me-2">Previous</button>
+                        <button id="nextBtn" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Content</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form action="" class="p-3">
+
+
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Change Name</label>
+                        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputAddress" class="form-label">Change Address</label>
+                        <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail" class="form-label">Change Email</label>
+                        <input type="Email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="exampleInputPhoney" class="form-label">Change Phone Number</label>
+                        <input type="text" class="form-control" id="exampleInputPhone" aria-describedby="emailHelp">
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="gender1" class="form-label">Gender </label>
+                        <select class="form-select" id="gender1" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Search functionality
+        document.getElementById("searchInput").addEventListener("keyup", function () {
+            let input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 1; i < tr.length; i++) { // Start from i=1 to skip the first row
+                td = tr[i].getElementsByTagName("td");
+                let found = false;
+                for (let j = 0; j < td.length; j++) {
+                    let cell = td[j];
+                    if (cell) {
+                        txtValue = cell.textContent || cell.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                if (found) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        });
+
+        // Pagination
+        let currentPage = 0;
+        let rowsPerPage = 10; // Change this value to display different number of rows per page
+        let table = document.getElementById("myTable");
+        let rows = table.getElementsByTagName("tr");
+        let totalPages = Math.ceil((rows.length - 1) / rowsPerPage);
+
+        function showPage(page) {
+            let startIndex = page * rowsPerPage + 1;
+            let endIndex = (page + 1) * rowsPerPage + 1;
+            for (let i = 1; i < rows.length; i++) {
+                if (i >= startIndex && i < endIndex) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+
+        document.getElementById("prevBtn").addEventListener("click", function () {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", function () {
+            if (currentPage < totalPages - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        });
+
+        showPage(currentPage);
+    </script>
+
+</body>
+
+</html>
