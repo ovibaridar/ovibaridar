@@ -1,0 +1,46 @@
+
+
+
+
+.logo {
+
+    height: 15px;
+    width: 100px;
+
+}
+
+.hadding{
+    font-size: 25px;
+    font-weight: bold;
+
+
+}
+.paragrah{
+
+    text-align: justify;
+}
+.d_hadding{
+
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.d_hadding2{
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.cards {
+    min-height: 130px;
+}
+.m_g{
+    height: 120px;
+}
+a:link {
+    
+    color: black;
+    text-decoration: none;
+    
+  }
